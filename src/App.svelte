@@ -385,8 +385,9 @@
   }
 
   main {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-family: "DM Sans", sans-serif;
+    transform: scale(0.9);
   }
 </style>
