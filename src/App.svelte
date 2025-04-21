@@ -388,8 +388,9 @@
     margin-left: 30px;
     margin-right: 30px;
     font-family: "DM Sans", sans-serif;
-    transform: scale(0.7);
     margin-top: 0;
     margin-bottom: 0;
+    max-width: 1200px;
+    margin-inline: auto;
   }
 </style>
