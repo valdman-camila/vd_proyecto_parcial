@@ -390,7 +390,7 @@
     font-family: "DM Sans", sans-serif;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 1000px;
+    max-width: 100px;
     margin-inline: auto;
   }
 </style>
