@@ -151,8 +151,9 @@
 
   * {
     font-family: "DM Sans", sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    zoom: 80%;
   }
 
   .footer {
@@ -391,7 +392,8 @@
   }
 
   main {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    zoom: 80%;
   }
 </style>
