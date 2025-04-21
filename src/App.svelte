@@ -389,5 +389,7 @@
     margin-right: 30px;
     font-family: "DM Sans", sans-serif;
     transform: scale(0.7);
+    margin-top: 0;
+    margin-bottom: 0;
   }
 </style>
