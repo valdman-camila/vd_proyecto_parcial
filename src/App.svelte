@@ -385,9 +385,12 @@
   }
 
   main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-size: 0.9rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1000px;
+    margin-inline: auto;
   }
 </style>
