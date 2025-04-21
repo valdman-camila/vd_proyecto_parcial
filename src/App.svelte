@@ -387,4 +387,9 @@
   .graph_container::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
+
+  main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 </style>
