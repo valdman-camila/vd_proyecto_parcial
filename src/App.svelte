@@ -149,12 +149,6 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-  * {
-    font-family: "DM Sans", sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
   .footer {
     display: flex;
     justify-content: space-between;
@@ -393,5 +387,6 @@
   main {
     margin-left: 20px;
     margin-right: 20px;
+    font-family: "DM Sans", sans-serif;
   }
 </style>
