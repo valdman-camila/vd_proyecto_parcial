@@ -385,12 +385,9 @@
   }
 
   main {
-    margin-left: 30px;
-    margin-right: 30px;
-    font-family: "DM Sans", sans-serif;
-    margin-top: 0;
-    margin-bottom: 0;
     max-width: 1200px;
-    margin-inline: auto;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 0.9rem;
   }
 </style>
