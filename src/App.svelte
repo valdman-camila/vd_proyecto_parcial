@@ -389,7 +389,7 @@
   }
 
   main {
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 </style>
