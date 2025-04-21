@@ -388,6 +388,6 @@
     margin-left: 30px;
     margin-right: 30px;
     font-family: "DM Sans", sans-serif;
-    transform: scale(0.9);
+    transform: scale(0.7);
   }
 </style>
