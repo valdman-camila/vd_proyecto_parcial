@@ -26,14 +26,14 @@
   let altura = d3
     .scaleLinear()
     .domain([0, maxValor])
-    .range([0, 500])
+    .range([0, 300])
 </script>
 
 <main>
   <div class="header">
     <img
       src="./images/moth-clipart-original.png"
-      width="200"
+      width="150"
       alt="Polilla"
     />
     <h3 class="headline">
@@ -51,10 +51,10 @@
             <p class="value-h">{item.destruccion} (H)</p>
             <p class="value-d">{item.diversidad} (D)</p>
           </div>
-            <img class="bigMoth" src="./images/moth-illustration-by-Vexels.svg" alt="silkmoth" style="height: {(altura(item.diversidad - cantidadMinima) * 1.5)}px"/>
-            <img class="LeafB" src="./images/double_leaf.svg" alt="big leaf" style="height:{altura(item.diversidad - cantidadMinima) *1.5}px" />
-            <img class="smallMoth" src="./images/grey-moth-illustration-by-Vexels.svg" alt="common moth" style="height:{altura(item.destruccion - cantidadMinima) * 1.5}px"/>
-            <img class="LeafA" src="./images/double_leaf.svg" alt="small leaf" style="height:{altura(item.destruccion - cantidadMinima) * 1.5}px"/>
+            <img class="bigMoth" src="./images/moth-illustration-by-Vexels.svg" alt="silkmoth" style="height: {(altura(item.diversidad - cantidadMinima) * 1.0)}px"/>
+            <img class="LeafB" src="./images/double_leaf.svg" alt="big leaf" style="height:{altura(item.diversidad - cantidadMinima) *1.0}px" />
+            <img class="smallMoth" src="./images/grey-moth-illustration-by-Vexels.svg" alt="common moth" style="height:{altura(item.destruccion - cantidadMinima) * 1.0}px"/>
+            <img class="LeafA" src="./images/double_leaf.svg" alt="small leaf" style="height:{altura(item.destruccion - cantidadMinima) * 1.0}px"/>
           <div class="column2" style="height: {altura(item.destruccion)}px"></div>
         </div>
       {/each}
@@ -63,7 +63,7 @@
     <div class="region-labels">
       {#each dataLepidopteraRegion as item}
         <div class="region-label">
-          <p class="counMoth" style="margin-right: 0px; margin-left: 18px">{item.anio}</p>
+          <p class="counMoth">{item.anio}</p>
         </div> 
       {/each}
     </div>
@@ -72,11 +72,11 @@
   <!-- Índices -->
   <div class="legend-container">
     <div class="legend-item">
-      <img src="./images/moth-illustration-by-Vexels.svg" style="height: 150px" alt="polilla grande"/>
+      <img src="./images/moth-illustration-by-Vexels.svg" style="height: 100px" alt="polilla grande"/>
       <p>Índice de diversidad (D)</p>
     </div>
     <div class="legend-item">
-      <img src="./images/grey-moth-illustration-by-Vexels.svg" style="height: 150px" alt="polilla chica"/>
+      <img src="./images/grey-moth-illustration-by-Vexels.svg" style="height: 100px" alt="polilla chica"/>
       <p>Índice de destrucción del hábitat (H)</p>
     </div>
   </div>
@@ -85,7 +85,7 @@
     De las aproximadamente 174,250 especies de lepidópteros descritas hasta 2007, se estima que las mariposas y los hespéridos comprenden alrededor de 17,950, mientras que el resto son polillas. Los lepidópteros están distribuidos en todas las regiones faunísticas excepto la Antártida, pero en áreas como el Neotrópico y la región Indo-australiana, la riqueza de especies es particularmente alta, con mariposas y polillas adaptadas a ecosistemas muy específicos. 
   </p>
 
-  <h3 class="headline" style="margin-top: 130px">
+  <h3 class="headline" style="margin-top: 80px">
     El paso de los años: menos diversidad y más deterioro
   </h3>
   <div class="chart-wrapper" style="margin-top: 10px">
@@ -105,7 +105,7 @@
     A lo largo del tiempo, el aumento constante en la destrucción del hábitat (H) se correlaciona directamente con una disminución del índice de diversidad (D). Se podría plantear, entonces, que mientras más se alteran y degradan los ecosistemas, menos especies logran sobrevivir o coexistir, provocando un colapso en la riqueza biológica. La trayectoria ascendente de la destrucción contrasta con el declive constante de la diversidad, evidenciando una relación inversamente proporcional entre ambos fenómenos.
   </p>
 
-  <h3 class="headline" style="margin-top: 130px">
+  <h3 class="headline" style="margin-top: 80px">
     Cambios porcentuales anuales
   </h3>
   <div class="chart-wrapper" style="margin-top: 10px">
@@ -154,12 +154,12 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 60px;
+    padding: 30px 40px;
     background-color: #ffc21c3a;
     border-top: 2px solid #ffc21c;
-    font-size: 18px;
-    gap: 20px;
-    margin-top: 100px;
+    font-size: 16px;
+    gap: 15px;
+    margin-top: 60px;
     margin-bottom: 0%;
   }
 
@@ -171,13 +171,13 @@
 
   .footer-right {
     display: flex;
-    gap: 20px;
+    gap: 15px;
   }
 
   .footer-link {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -189,8 +189,8 @@
   }
 
   .footer-link img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 
   .header {
@@ -198,34 +198,34 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 
   .headline {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1.2;
     font-weight: normal;
     text-align: center;
-    margin: 20px;
+    margin: 15px;
   }
 
   .headline b {
     display: block;
-    font-size: 35px;
+    font-size: 28px;
     margin-bottom: 5px;
   }
 
   .chart-wrapper {
-    max-width: 1100px;
+    max-width: 900px;
     margin: auto;
-    margin-bottom: 100px;
-    margin-top: 130px;
+    margin-bottom: 60px;
+    margin-top: 60px;
   }
 
   .graph_container {
     position: relative;
-    margin-bottom: 60px; 
+    margin-bottom: 40px; 
     overflow-x: auto;
     overflow-y:hidden;
     width: 100%;
@@ -233,23 +233,23 @@
 
   .container {
     display: flex;
-    height: 550px;
+    height: 400px;
     position: relative;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: max-content;
     min-width: 100%;
-    gap: 140px; 
+    gap: 80px; 
   }
 
   .region-labels {
     display: flex;
     width: max-content;
     min-width: 100%;
-    padding-left: 60px;
-    padding-right: 60px;
-    gap: 140px; 
-    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 80px; 
+    margin-top: 15px;
   }
 
   .labels-wrapper {
@@ -262,7 +262,7 @@
   }
 
   .value-h, .value-d {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     white-space: nowrap;
     padding: 2px 5px;
@@ -279,7 +279,7 @@
 
   .region-label {
     text-align: center;
-    width: 80px;
+    width: 60px;
     flex-shrink: 0;
   }
 
@@ -288,96 +288,97 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
-    width: 80px;
+    gap: 8px;
+    width: 60px;
     position: relative;
     height: 100%;
     flex-shrink: 0;
   }
 
   .column2 {
-    width: 20px;
+    width: 15px;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgb(70, 126, 2);
   }
 
   .counMoth {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     color: #000000;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .bigMoth{
     position: absolute;
     z-index: 1;
-    width: 200px;
+    width: 120px;
     height: 100%;
-    transform: scale(1.8) rotate(40deg);
-    margin-right: -100px;
+    transform: scale(1.2) rotate(40deg);
+    margin-right: -60px;
   }
 
   .smallMoth{
     position: absolute;
     z-index: 1;
-    width: 150px;
+    width: 90px;
     height: 100%;
-    transform: scale(1.8) rotate(-40deg);
-    margin-left: -100px;
+    transform: scale(1.2) rotate(-40deg);
+    margin-left: -60px;
   }
 
   .LeafA{
     position: absolute;
     z-index: 0;
-    width: 200px;
+    width: 120px;
     height: 100%;
-    transform: scale(1.5) rotate(40deg);
-    margin-left: -80px;
+    transform: scale(1.0) rotate(40deg);
+    margin-left: -50px;
   }
 
   .LeafB{
     position: absolute;
     z-index: 0;
-    width: 200px;
+    width: 120px;
     height: 100%;
-    transform: scale(1.5) rotate(-40deg);
-    margin-right: -80px;
+    transform: scale(1.0) rotate(-40deg);
+    margin-right: -50px;
   }
 
   p {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 15px;
     margin-right: 15px;
+    line-height: 1.5;
   }
 
   .legend-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
-    margin-bottom: 100px;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
   }
 
   .legend-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
 
   .legend-item p {
     margin: 0;
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .graph_container::-webkit-scrollbar {
-    height: 8px;
+    height: 6px;
   }
 
   .graph_container::-webkit-scrollbar-thumb {
     background: #ffc21c;
-    border-radius: 4px;
+    border-radius: 3px;
   }
   
   .graph_container::-webkit-scrollbar-track {
@@ -385,12 +386,12 @@
   }
 
   main {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: "DM Sans", sans-serif;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 100px;
     margin-inline: auto;
+    max-width: 1200px;
   }
 </style>
