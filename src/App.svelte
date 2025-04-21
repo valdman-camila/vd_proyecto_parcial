@@ -153,7 +153,7 @@
     font-family: "DM Sans", sans-serif;
     margin-left: 15px;
     margin-right: 15px;
-    zoom: 80%;
+    zoom: 60%;
   }
 
   .footer {
@@ -394,6 +394,6 @@
   main {
     margin-left: 15px;
     margin-right: 15px;
-    zoom: 80%;
+    zoom: 60%;
   }
 </style>
