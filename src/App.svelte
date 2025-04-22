@@ -26,7 +26,7 @@
   let altura = d3
     .scaleLinear()
     .domain([0, maxValor])
-    .range([0, 300])
+    .range([0, 500])
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
   <div class="header">
     <img
       src="./images/moth-clipart-original.png"
-      width="150"
+      width="100"
       alt="Polilla"
     />
     <h3 class="headline">
@@ -130,8 +130,8 @@
   <br />
   <footer class="footer">
     <div class="footer-left">
-      <p class="text">Desarrollado por <strong>Camila Nicole Valdman</strong></p>
-      <p class="text">Visualización de Datos – 2025</p>
+      <p style="margin-left:0px">Desarrollado por <strong>Camila Nicole Valdman</strong></p>
+      <p style="margin-left:0px">Visualización de Datos – 2025</p>
     </div>
     <div class="footer-right">
       <a href="https://www.linkedin.com/in/camila-valdman-3241542a2/" target="_blank" class="footer-link">
@@ -200,7 +200,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 40px;
   }
 
@@ -251,7 +251,7 @@
     padding-left: 50px;
     padding-right: 50px;
     gap: 80px; 
-    margin-top: 15px;
+    margin-top: 5px;
   }
 
   .labels-wrapper {
@@ -310,6 +310,8 @@
     color: #000000;
     text-align: center;
     margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .bigMoth{
@@ -350,8 +352,8 @@
 
   p {
     font-size: 16px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 70px;
+    margin-right: 70px;
     line-height: 1.5;
   }
 
@@ -388,12 +390,15 @@
   }
 
   main {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-family: "DM Sans", sans-serif;
     margin-top: 0;
     margin-bottom: 0;
     margin-inline: auto;
     max-width: 1200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 0%;
   }
 </style>
