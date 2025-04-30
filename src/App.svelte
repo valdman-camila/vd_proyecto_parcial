@@ -271,11 +271,11 @@
     border-radius: 3px;
   }
 
-  .value-h {
+  .value-d {
     color: #80510c;
   }
 
-  .value-d {
+  .value-h {
     color: #454459;
   }
 
