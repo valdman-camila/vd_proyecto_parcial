@@ -53,10 +53,10 @@
             <p class="value-h">{item.destruccion} (H)</p>
             <p class="value-d">{item.diversidad} (D)</p>
           </div>
-            <img class="bigMoth" src="./images/moth-illustration-by-Vexels.svg" alt="silkmoth" style="height: {(altura(item.diversidad - cantidadMinima) * 1.0)}px"/>
-            <img class="LeafB" src="./images/double_leaf.svg" alt="big leaf" style="height:{altura(item.diversidad - cantidadMinima) *1.0}px" />
-            <img class="smallMoth" src="./images/grey-moth-illustration-by-Vexels.svg" alt="common moth" style="height:{altura(item.destruccion - cantidadMinima) * 1.0}px"/>
-            <img class="LeafA" src="./images/double_leaf.svg" alt="small leaf" style="height:{altura(item.destruccion - cantidadMinima) * 1.0}px"/>
+            <img class="bigMoth" src="./images/moth-illustration-by-Vexels.svg" alt="silkmoth" style="height: {(altura(item.diversidad - cantidadMinima))}px"/>
+            <img class="LeafB" src="./images/double_leaf.svg" alt="big leaf" style="height:{altura(item.diversidad - cantidadMinima)}px" />
+            <img class="smallMoth" src="./images/grey-moth-illustration-by-Vexels.svg" alt="common moth" style="height:{altura(item.destruccion - cantidadMinima)}px"/>
+            <img class="LeafA" src="./images/double_leaf.svg" alt="small leaf" style="height:{altura(item.destruccion - cantidadMinima)}px"/>
           <div class="column2" style="height: {altura(item.destruccion)}px"></div>
         </div>
       {/each}
